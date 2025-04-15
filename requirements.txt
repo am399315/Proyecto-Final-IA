@@ -1,0 +1,12 @@
+# Andres Miguel Escolastico Lara. 23-EISN-2-056
+
+streamlit==1.44.1
+openai==1.70.0
+python-dotenv==1.1.0
+requests==2.32.3
+pillow==11.1.0
+pygame==2.6.1
+pyttsx3==2.98
+numpy==2.2.4
+pandas==2.2.3
+pywin32==310; platform_system == "Windows"

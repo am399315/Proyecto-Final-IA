@@ -16,7 +16,7 @@ Andres Miguel Escolastico Lara
 Este proyecto es un generador de historias interactivas que utiliza inteligencia artificial para crear experiencias narrativas completas. La aplicación combina modelos avanzados de lenguaje para generar historias coherentes, sintetiza voz para narrarlas, y utiliza DALL·E 3 para crear imágenes únicas que ilustran cada escena. Todo esto se reproduce de manera sincronizada con música de fondo para crear una experiencia inmersiva.
 
 ## Características principales
-- **Generación de historias**: Utiliza OpenAI GPT-3.5-Turbo para crear narrativas coherentes y estructuradas a partir de cualquier tema proporcionado por el usuario.
+- **Generación de historias**: Utiliza OpenAI GPT-4o-mini para crear narrativas coherentes y estructuradas a partir de cualquier tema proporcionado por el usuario.
 - **Imágenes generadas con IA**: Implementa DALL·E 3 para crear ilustraciones visuales únicas para cada escena de la historia.
 - **Narración por voz**: Convierte el texto de la historia a voz utilizando síntesis de voz para una experiencia auditiva.
 - **Música de fondo**: Reproduce música ambiental que complementa la narración.
@@ -27,7 +27,7 @@ Este proyecto es un generador de historias interactivas que utiliza inteligencia
 - **Python 3.8+**: Lenguaje principal del proyecto
 - **Streamlit**: Framework para la interfaz gráfica de usuario
 - **OpenAI API**: 
-  - GPT-3.5-Turbo para generar historias
+  - GPT-4o-mini para generar historias
   - DALL·E 3 para crear imágenes
 - **pyttsx3**: Biblioteca para síntesis de voz
 - **Pygame**: Manejo de la reproducción de audio
@@ -56,7 +56,7 @@ Este proyecto es un generador de historias interactivas que utiliza inteligencia
 
 ### Requisitos previos
 - Python 3.8 o superior
-- Cuenta de OpenAI con API key (para GPT-3.5-Turbo y DALL·E 3)
+- Cuenta de OpenAI con API key (para GPT-4o-mini y DALL·E 3)
 
 ### Pasos para la instalación
 1. Clona este repositorio:
@@ -74,7 +74,7 @@ Este proyecto es un generador de historias interactivas que utiliza inteligencia
    - Copia el archivo `.env.example` a `.env`
    - Añade tu API key de OpenAI en el archivo `.env`:
      ```
-     OPENAI_API_KEY=tu_clave_api_de_openai_aqui
+     OPENAI_API_KEY=clave_api_de_openai
      ```
 
 4. Prepara las carpetas para los recursos:
@@ -108,7 +108,7 @@ Este proyecto es un generador de historias interactivas que utiliza inteligencia
 
 1. **Generación de la historia**:
    - El usuario proporciona un tema
-   - GPT-3.5-Turbo genera una historia estructurada en escenas
+   - GPT-4o-mini genera una historia estructurada en escenas
 
 2. **Creación de imágenes**:
    - Para cada escena, se genera un prompt para DALL·E 3
@@ -153,3 +153,7 @@ Las contribuciones son bienvenidas. Si deseas contribuir:
 Enlace del proyecto: [https://github.com/am399315/Proyecto-Final-IA.git](https://github.com/am399315/Proyecto-Final-IA.git)
 
 # Andres Miguel Escolastico Lara. 23-EISN-2-056
+
+
+
+

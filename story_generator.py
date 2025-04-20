@@ -18,7 +18,7 @@ _story_cache = {}
 
 def generate_story(theme, max_length=1000, num_scenes=5, temperature=0.7, retry_attempts=2):
     """
-    Genera una historia basada en un tema proporcionado usando GPT-3.5-Turbo.
+    Genera una historia basada en un tema proporcionado usando GPT-4o-mini.
     
     Args:
         theme (str): El tema de la historia
@@ -41,7 +41,7 @@ def generate_story(theme, max_length=1000, num_scenes=5, temperature=0.7, retry_
     
     while attempts <= retry_attempts:
         try:
-            # Prompt optimizado para GPT-3.5-Turbo
+            # Prompt optimizado para GPT-4o-mini
             prompt = f"""
             Crea una historia interesante y original sobre el tema: '{theme}'.
             La historia debe seguir esta estructura:
@@ -55,8 +55,9 @@ def generate_story(theme, max_length=1000, num_scenes=5, temperature=0.7, retry_
             """
             
             # Llamada a la API de OpenAI con exponential backoff
+            # Cambiado de "gpt-3.5-turbo" a "gpt-4o-mini"
             response = openai.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "Eres un narrador creativo que crea historias inmersivas y visuales."},
                     {"role": "user", "content": prompt}
